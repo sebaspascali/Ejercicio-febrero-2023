@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+
+.contenedor-principal {
+    margin: 0 auto;
+    padding: 25px;
+    position: relative;
+    background-color: #FFFFFF;
+    max-width: 375px;
+    width: 90%;
+}
+
+.seccion_uno {
+    position: relative;
+    background-image: url(/img/imgmujer-mobile.png);
+    background-repeat: no-repeat;
+    max-width: 100%;
+    border-radius: 16px;
+    height: 600px;
+    margin: 100px 0px 0px 0px;
+    border: 1px solid transparent;
+}
+
+.seccion_uno_p {
+    margin: 25px 0px  30px 30px;
+    text-align: left;
+    max-width: 289px;
+    max-height: 108px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    color: #133599;
+}
+
+.seccion_uno_div_boton {
+    margin-left: 35px;
+    max-width: 60%;
+    height: 40px;
+    background-color: #1AF5B1;
+    border-radius: 5.4px;
+    transform: skew(-30deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+br {
+    display: none;
+}
+
+.seccion_uno_contenido_boton {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #133599;
+    font-size: 12px;
+    font-style: normal;
+    max-width: 80%;
+    transform: skew(30deg);
+}
+
+.secion_uno_logo {
+    position: absolute;
+    max-width: 80%;
+    margin: auto;
+    bottom: 15px;
+    right: 10px;
+}
+
+.seccion_dos {
+background-color: #F7F8FA;
+height: 576px;
+bottom: 10%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+max-width: 100%;
+margin-top: -25px;
+padding: 60px 35px 25px 35px;
+border-radius: 16px;
+}
+
+.secion_uno_mujer{
+    border-radius: 0px 0px 16px 16px;
+    
+}
+
+.secion_uno_numeros {
+    position: absolute;
+    right: -50px;
+    top: 320px;
+    transform: rotate(-90deg);
+}
+
+.seccion_dos_div_uno, .seccion_dos_div_dos, .seccion_dos_div_tres {
+    
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    /*justify-content: center;*/
+}
+
+.seccion_dos_img_uno, .seccion_dos_img_dos, .seccion_dos_img_tres {
+    width: 59px;
+    margin-bottom: 10px ;
+}
+
+.seccion_dos_p_uno{
+ text-align: center;
+ color: #133599;
+ font-weight: 600;
+ line-height: 24px;
+}
+
+.seccion_dos_p_dos{
+    text-align: center;
+    color: #133599;
+    font-weight: 600;
+    line-height: 24px;
+    width: 180px;
+}
+
+.seccion_dos_p_tres{
+text-align: center;
+ color: #133599;
+ font-weight: 600;
+ line-height: 24px;
+ width: 150px;
+
+}
+
+@media (max-width: 280px) {
+    .seccion_uno_p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .seccion_uno_contenido_boton{
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .seccion_dos_p_dos {
+        width: 150px;
+    }
+
+    .seccion_dos_p_uno, .seccion_dos_p_dos, .seccion_dos_p_tres {
+        line-height: 16px;
+    }
+
+    .secion_uno_numeros {
+        display: none;
+    }
+}
+
+@media  (min-width: 281px) and (max-width: 360px) {
+    .seccion_uno_p {
+        width:200px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .secion_uno_numeros {
+        display: none;
+    }
+
+    .seccion_uno_contenido_boton{
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1440px ) {
+    .contenedor-principal {
+        margin: 0 auto;
+        padding: 25px;
+        position: relative;
+        max-width: 1440px;
+    }
+
+    .seccion_uno {
+        position: relative;
+        background-image: url(/img/imgmujer.png);
+        background-repeat: no-repeat;
+        width: 1312px;
+        border-radius: 16px;
+        height: 464px;
+        margin: 100px auto 0px;
+    }
+
+    .seccion_uno_p{
+        max-width: 520px;
+        min-height: 198px;
+        font-size: 56px;
+        line-height: 64px;
+        margin: 70px 0px 30px 60px;
+    }
+
+    .seccion_uno_div_boton {
+        max-width: 275px;
+        height: 60px;
+        margin-left: 80px;
+    }
+
+    .seccion_uno_contenido_boton {
+        font-size: 18px;
+    }
+
+    .secion_uno_numeros {
+        right: 25px;
+        top: 25px;
+        transform: rotate(0deg);
+    }
+
+    .seccion_dos {
+        flex-direction: row;
+        width: 1312px;
+        height: 175px; 
+        margin: 0 auto;
+        margin-top: -25px;
+        padding-top: 50px;
+    }
+
+    .seccion_dos_div_uno, .seccion_dos_div_dos, .seccion_dos_div_tres {
+        flex-direction: row;
+        justify-content: center;
+        justify-content: center;
+        padding: 0px 15px;
+}
+
+    .seccion_dos_p_uno, .seccion_dos_p_dos , .seccion_dos_p_tres {
+        text-align: left;
+        margin-left: 15px;
+        line-height: 19px;
+    }
+
+    .seccion_dos_p_dos {
+        width: 200px;
+    }
+
+    .seccion_dos_img_uno{
+        width: 75px;
+    }
+    .seccion_dos_img_dos{       
+        width: 45px;
+    }
+
+    .seccion_dos_img_tres {
+        width: 55px;
+    }
+
+    br {
+        display: block;
+    }
+
+}
